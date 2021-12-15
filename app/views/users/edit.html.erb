@@ -9,7 +9,7 @@
           </div>
         <% end %>
 
-        <%= form_tag("/users/#{@user.id}/update", {multipart :true}) do %>
+        <%= form_tag("/users/#{@user.id}/update", {multipart: true}) do %>
           <p>Name</p>
           <input name="name" value="<%= @user.name %>">
           <p>Image</p>
