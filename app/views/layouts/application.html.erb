@@ -13,24 +13,41 @@
   <body>
     <header>
       <div class="header-logo">
-        <%= link_to("TweetApp", "/") %>
+        <% if @current_user %>
+          <%= link_to("TweetApp", "/posts/index") %>
+        <% else %>
+          <%= link_to("TweetApp", "/") %>
+        <% end %>
       </div>
       <ul class="header-menus">
-        <li>
-          <%= link_to("About", "/about") %>
-        </li>
-        <li>
-          <%= link_to("Posts", "/posts/index") %>
-        </li>
-        <li>
-          <%= link_to("New post", "/posts/new") %>
-        </li>
-        <li>
-          <%= link_to("Users", "/users/index") %>
-        </li>
-        <li>
-          <%= link_to("Sign up", "/signup") %>
-        </li>
+        <% if @current_user %>
+          <li>
+            <%= link_to(@current_user.name, "/users/#{@current_user.id}") %>
+          </li>
+          <li>
+            <%= link_to("Posts", "/posts/index") %>
+          </li>
+          <li>
+            <%= link_to("New post", "/posts/new") %>
+          </li>
+          <li>
+            <%= link_to("Users", "/users/index") %>
+          </li>
+          <li>
+            <%= link_to("Logout", "/logout", {method: :post}) %>
+          </li>
+        <% else %>
+          <li>
+            <%= link_to("About", "/about") %>
+          </li>
+          <li>
+            <%= link_to("Sign up", "/signup") %>
+          </li>
+          <li>
+            <%= link_to("Login", "/login") %>
+          </li>
+        <% end %>
+
       </ul>
     </header>
     <% if flash[:notice] %>
