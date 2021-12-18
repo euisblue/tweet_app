@@ -1,24 +1,27 @@
-# README
+# TweetApp
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<div>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" width="50" height="50" alt="2.7.1" /> 
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg" width="50" height="50" alt="6.1.4.1"/>
+</div>
 
-Things you may want to cover:
+<br />
 
-* Ruby version
+The original project is from [Progate](https://progate.com/courses/rails5) (Ruby on Rails - Web Development)
 
-* System dependencies
+## Demo
 
-* Configuration
+## Implemented
+- User Model
+  + Create, Read, Update, Delete
+  + Login, Logout, authentication
+  + password encryption (bcrypt)
+- Post Model
+  + Create, Read, Update, Delete
+  + Like & Unlike
+  + authentication (prevent person A edit/delete person B's post)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Future Improvements
+- [ ] Follow & Unfollow feature
+- [ ] Allow string comments on a post
+- [ ] Allow image inserts on a post
