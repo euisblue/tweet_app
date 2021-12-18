@@ -9,7 +9,8 @@
 
 The original project is from [Progate](https://progate.com/courses/rails5) (Ruby on Rails - Web Development)
 
-## Demo
+## Demo (Heroku)
+[Demo](https://tranquil-depths-03408.herokuapp.com/)
 
 ## Implemented
 - User Model
