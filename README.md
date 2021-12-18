@@ -23,6 +23,7 @@ The original project is from [Progate](https://progate.com/courses/rails5) (Ruby
   + authentication (prevent person A edit/delete person B's post)
 
 ## Future Improvements
+- [ ] Upload and read images from S3
 - [ ] Follow & Unfollow feature
 - [ ] Allow string comments on a post
 - [ ] Allow image inserts on a post
